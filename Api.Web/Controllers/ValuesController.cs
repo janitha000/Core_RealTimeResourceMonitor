@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Api.Library;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Web.Controllers
@@ -20,7 +21,8 @@ namespace Api.Web.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            Class1 cl = new Class1();
+            return cl.GetOS();
         }
 
         // POST api/values

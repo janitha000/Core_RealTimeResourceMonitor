@@ -7,7 +7,7 @@ namespace Api.Data
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Filename=./Cars.db");
+            optionsBuilder.UseSqlite("Filename=./Resource.db");
         }
     }
 }
