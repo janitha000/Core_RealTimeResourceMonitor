@@ -1,0 +1,8 @@
+/home/janitha/Documents/Core/Api/Api.Data/obj/Debug/netcoreapp2.0/Api.Data.csproj.CoreCompileInputs.cache
+/home/janitha/Documents/Core/Api/Api.Data/obj/Debug/netcoreapp2.0/Api.Data.AssemblyInfoInputs.cache
+/home/janitha/Documents/Core/Api/Api.Data/obj/Debug/netcoreapp2.0/Api.Data.AssemblyInfo.cs
+/home/janitha/Documents/Core/Api/Api.Data/bin/Debug/netcoreapp2.0/Api.Data.deps.json
+/home/janitha/Documents/Core/Api/Api.Data/bin/Debug/netcoreapp2.0/Api.Data.dll
+/home/janitha/Documents/Core/Api/Api.Data/bin/Debug/netcoreapp2.0/Api.Data.pdb
+/home/janitha/Documents/Core/Api/Api.Data/obj/Debug/netcoreapp2.0/Api.Data.dll
+/home/janitha/Documents/Core/Api/Api.Data/obj/Debug/netcoreapp2.0/Api.Data.pdb

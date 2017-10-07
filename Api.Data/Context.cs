@@ -1,8 +1,13 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace Api.Data
 {
-    public class Context : 
+    public class Context : DbContext
     {
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlite("Filename=./Cars.db");
+        }
     }
 }
