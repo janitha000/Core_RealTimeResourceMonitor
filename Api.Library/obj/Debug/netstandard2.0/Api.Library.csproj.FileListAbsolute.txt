@@ -1,0 +1,8 @@
+/home/janitha/Documents/Core/Api/Api.Library/bin/Debug/netstandard2.0/Api.Library.deps.json
+/home/janitha/Documents/Core/Api/Api.Library/bin/Debug/netstandard2.0/Api.Library.dll
+/home/janitha/Documents/Core/Api/Api.Library/bin/Debug/netstandard2.0/Api.Library.pdb
+/home/janitha/Documents/Core/Api/Api.Library/obj/Debug/netstandard2.0/Api.Library.csproj.CoreCompileInputs.cache
+/home/janitha/Documents/Core/Api/Api.Library/obj/Debug/netstandard2.0/Api.Library.AssemblyInfoInputs.cache
+/home/janitha/Documents/Core/Api/Api.Library/obj/Debug/netstandard2.0/Api.Library.AssemblyInfo.cs
+/home/janitha/Documents/Core/Api/Api.Library/obj/Debug/netstandard2.0/Api.Library.dll
+/home/janitha/Documents/Core/Api/Api.Library/obj/Debug/netstandard2.0/Api.Library.pdb

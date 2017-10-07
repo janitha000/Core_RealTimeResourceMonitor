@@ -1,0 +1,13 @@
+/home/janitha/Documents/Core/Api/Api.Tests/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/home/janitha/Documents/Core/Api/Api.Tests/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/home/janitha/Documents/Core/Api/Api.Tests/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/home/janitha/Documents/Core/Api/Api.Tests/bin/Debug/netcoreapp2.0/Api.Tests.deps.json
+/home/janitha/Documents/Core/Api/Api.Tests/bin/Debug/netcoreapp2.0/Api.Tests.runtimeconfig.json
+/home/janitha/Documents/Core/Api/Api.Tests/bin/Debug/netcoreapp2.0/Api.Tests.runtimeconfig.dev.json
+/home/janitha/Documents/Core/Api/Api.Tests/bin/Debug/netcoreapp2.0/Api.Tests.dll
+/home/janitha/Documents/Core/Api/Api.Tests/bin/Debug/netcoreapp2.0/Api.Tests.pdb
+/home/janitha/Documents/Core/Api/Api.Tests/obj/Debug/netcoreapp2.0/Api.Tests.csproj.CoreCompileInputs.cache
+/home/janitha/Documents/Core/Api/Api.Tests/obj/Debug/netcoreapp2.0/Api.Tests.AssemblyInfoInputs.cache
+/home/janitha/Documents/Core/Api/Api.Tests/obj/Debug/netcoreapp2.0/Api.Tests.AssemblyInfo.cs
+/home/janitha/Documents/Core/Api/Api.Tests/obj/Debug/netcoreapp2.0/Api.Tests.dll
+/home/janitha/Documents/Core/Api/Api.Tests/obj/Debug/netcoreapp2.0/Api.Tests.pdb
