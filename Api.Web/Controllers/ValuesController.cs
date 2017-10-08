@@ -21,7 +21,7 @@ namespace Api.Web.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            Class1 cl = new Class1();
+            OperatingSystemManager cl = new OperatingSystemManager();
             return cl.GetOS();
         }
 

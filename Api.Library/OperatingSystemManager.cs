@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace Api.Library
 {
-    public class Class1
+    public class OperatingSystemManager
     {
         public string GetOS()
         {
@@ -11,6 +11,10 @@ namespace Api.Library
             return osNameAndVersion;
         }
 
-
+        public string GetFramework()
+        {
+            string framework = System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription;
+            return framework;
+        }
     }
 }
