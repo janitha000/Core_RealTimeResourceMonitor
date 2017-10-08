@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Api.Data;
@@ -15,11 +16,20 @@ public class UserRepository : IRepository<User>
 
     public User Get(string name)
     {
-        using (Context context = new Context())
+        try
         {
-            User databaseUser = context.Users.FirstOrDefault(user => user.FirstName == name);
-            return databaseUser;
+            using (Context context = new Context())
+            {
+                User databaseUser = context.Users.FirstOrDefault(user => user.FirstName == name);
+                return databaseUser;
+            }
         }
+        catch (Exception)
+        {
+            Console.WriteLine("error when Getting from the database");
+            return null;
+        }
+
     }
 
     public void Update(string name)

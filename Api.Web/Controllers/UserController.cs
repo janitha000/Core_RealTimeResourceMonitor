@@ -6,11 +6,19 @@ using Microsoft.AspNetCore.Mvc;
 public class UserController : Controller
 {
 
-    [HttpGet]
-    public IEnumerable<User> Get()
+    [HttpGet("{name}")]
+    public User Get(string name)
     {
-        //return new string[] { "value1", "value2" };
-        return null;
+        UserManager manager = new UserManager();
+        User user = manager.GetUser(name);
+        return user;
+    }
+
+    [HttpPost]
+    public void Post([FromBody]User user)
+    {
+        UserManager manager = new UserManager();
+        manager.AddUser(user);
     }
 
 }
