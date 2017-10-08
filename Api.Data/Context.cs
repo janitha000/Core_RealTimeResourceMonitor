@@ -5,7 +5,12 @@ namespace Api.Data
 {
     public class Context : DbContext
     {
-        public DbSet<User> Users;
+        public DbSet<User> Users {get; set;}
+
+        public Context()
+        {
+            Database.EnsureCreated();
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Filename=./Resource.db");
