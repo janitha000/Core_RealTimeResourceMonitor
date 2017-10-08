@@ -9,7 +9,7 @@ public class UserController : Controller
     [HttpGet("{name}")]
     public User Get(string name)
     {
-        UserManager manager = new UserManager();
+        UsersManager manager = new UsersManager();
         User user = manager.GetUser(name);
         return user;
     }
@@ -17,7 +17,7 @@ public class UserController : Controller
     [HttpPost]
     public void Post([FromBody]User user)
     {
-        UserManager manager = new UserManager();
+        UsersManager manager = new UsersManager();
         manager.AddUser(user);
     }
 

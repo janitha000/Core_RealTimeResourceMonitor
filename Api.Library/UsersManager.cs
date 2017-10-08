@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-public class UserManager
+public class UsersManager
 {
     public User GetUser(string name)
     {
