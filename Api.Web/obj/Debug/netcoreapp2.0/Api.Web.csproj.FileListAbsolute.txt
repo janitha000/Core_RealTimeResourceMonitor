@@ -10,3 +10,5 @@
 /home/janitha/Documents/Core/Api/Api.Web/obj/Debug/netcoreapp2.0/Api.Web.pdb
 /home/janitha/Documents/Core/Api/Api.Web/bin/Debug/netcoreapp2.0/Api.Library.dll
 /home/janitha/Documents/Core/Api/Api.Web/bin/Debug/netcoreapp2.0/Api.Library.pdb
+/home/janitha/Documents/Core/Api/Api.Web/bin/Debug/netcoreapp2.0/Api.Data.dll
+/home/janitha/Documents/Core/Api/Api.Web/bin/Debug/netcoreapp2.0/Api.Data.pdb

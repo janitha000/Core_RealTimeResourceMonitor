@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 public interface IRepository<TData>
 {
     void Add(TData data);

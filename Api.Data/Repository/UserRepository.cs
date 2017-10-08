@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using Api.Data;
 
@@ -26,7 +27,8 @@ public class UserRepository : IRepository<User>
         using (Context context = new Context())
         {
             User databaseUser = context.Users.FirstOrDefault(user => user.FirstName == name);
-            context.Users.Update(databaseUser);
+            context.Users.Update(databaseUser); ;
+            context.SaveChanges();
         }
     }
 }

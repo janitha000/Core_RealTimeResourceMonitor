@@ -4747,9 +4747,26 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "Api.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.All": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Sqlite": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Api.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Api.Data.dll": {}
+        }
+      },
       "Api.Library/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Api.Data": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Api.Library.dll": {}
         },
@@ -12535,6 +12552,11 @@
         "windowsazure.storage.nuspec"
       ]
     },
+    "Api.Data/1.0.0": {
+      "type": "project",
+      "path": "../Api.Data/Api.Data.csproj",
+      "msbuildProject": "../Api.Data/Api.Data.csproj"
+    },
     "Api.Library/1.0.0": {
       "type": "project",
       "path": "../Api.Library/Api.Library.csproj",
@@ -12543,6 +12565,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Api.Data >= 1.0.0",
       "Api.Library >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
@@ -12578,6 +12601,9 @@
           "projectReferences": {
             "/home/janitha/Documents/Core/Api/Api.Library/Api.Library.csproj": {
               "projectPath": "/home/janitha/Documents/Core/Api/Api.Library/Api.Library.csproj"
+            },
+            "/home/janitha/Documents/Core/Api/Api.Data/Api.Data.csproj": {
+              "projectPath": "/home/janitha/Documents/Core/Api/Api.Data/Api.Data.csproj"
             }
           }
         }
