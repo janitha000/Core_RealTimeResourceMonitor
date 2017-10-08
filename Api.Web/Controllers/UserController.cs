@@ -1,10 +1,18 @@
 
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
+[Authorize]
 [Route("api/[controller]")]
 public class UserController : Controller
 {
+
+    [HttpGet]
+    public string GetAll(string name)
+    {
+        return "Janitha";
+    }
 
     [HttpGet("{name}")]
     public User Get(string name)
