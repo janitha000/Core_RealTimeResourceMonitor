@@ -12,3 +12,17 @@
 /home/janitha/Documents/Core/Api/Api.Web/bin/Debug/netcoreapp2.0/Api.Library.pdb
 /home/janitha/Documents/Core/Api/Api.Web/bin/Debug/netcoreapp2.0/Api.Data.dll
 /home/janitha/Documents/Core/Api/Api.Web/bin/Debug/netcoreapp2.0/Api.Data.pdb
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Web\bin\Debug\netcoreapp2.0\Api.Web.deps.json
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Web\bin\Debug\netcoreapp2.0\Api.Web.runtimeconfig.json
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Web\bin\Debug\netcoreapp2.0\Api.Web.runtimeconfig.dev.json
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Web\bin\Debug\netcoreapp2.0\Api.Web.dll
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Web\bin\Debug\netcoreapp2.0\Api.Web.pdb
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Web\bin\Debug\netcoreapp2.0\Api.Data.dll
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Web\bin\Debug\netcoreapp2.0\Api.Library.dll
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Web\bin\Debug\netcoreapp2.0\Api.Library.pdb
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Web\bin\Debug\netcoreapp2.0\Api.Data.pdb
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Web\obj\Debug\netcoreapp2.0\Api.Web.csproj.CoreCompileInputs.cache
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Web\obj\Debug\netcoreapp2.0\Api.Web.AssemblyInfoInputs.cache
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Web\obj\Debug\netcoreapp2.0\Api.Web.AssemblyInfo.cs
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Web\obj\Debug\netcoreapp2.0\Api.Web.dll
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Web\obj\Debug\netcoreapp2.0\Api.Web.pdb

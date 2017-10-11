@@ -12,4 +12,9 @@
     <PackageReference Include="MSTest.TestFramework" Version="1.1.18" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Api.Library\Api.Library.csproj" />
+    <ProjectReference Include="..\Api.Data\Api.Data.csproj" />
+  </ItemGroup>
+
 </Project>

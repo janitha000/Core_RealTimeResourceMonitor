@@ -16,4 +16,8 @@ public class UsersManager
         UserRepository repo = new UserRepository();
         repo.Add(user);
     }
+
+    public bool IsUserNameNull(User user){
+        return (user.FirstName == null);
+    }
 }
