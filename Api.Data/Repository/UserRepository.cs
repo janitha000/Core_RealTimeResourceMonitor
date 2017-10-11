@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Api.Data;
 
-public class UserRepository : IRepository<User>
+public class UserRepository : IUserRepository
 {
     public void Add(User data)
     {
