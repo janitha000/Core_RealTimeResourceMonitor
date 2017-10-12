@@ -14,3 +14,5 @@ E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Data\obj\Debug\netcoreapp2.0\
 E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Data\obj\Debug\netcoreapp2.0\Api.Data.AssemblyInfo.cs
 E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Data\obj\Debug\netcoreapp2.0\Api.Data.dll
 E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Data\obj\Debug\netcoreapp2.0\Api.Data.pdb
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Data\bin\Debug\netcoreapp2.0\Api.Library.dll
+E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Data\bin\Debug\netcoreapp2.0\Api.Library.pdb

@@ -11,8 +11,6 @@
 E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Library\bin\Debug\netcoreapp2.0\Api.Library.deps.json
 E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Library\bin\Debug\netcoreapp2.0\Api.Library.dll
 E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Library\bin\Debug\netcoreapp2.0\Api.Library.pdb
-E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Library\bin\Debug\netcoreapp2.0\Api.Data.dll
-E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Library\bin\Debug\netcoreapp2.0\Api.Data.pdb
 E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Library\obj\Debug\netcoreapp2.0\Api.Library.csproj.CoreCompileInputs.cache
 E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Library\obj\Debug\netcoreapp2.0\Api.Library.AssemblyInfoInputs.cache
 E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Library\obj\Debug\netcoreapp2.0\Api.Library.AssemblyInfo.cs

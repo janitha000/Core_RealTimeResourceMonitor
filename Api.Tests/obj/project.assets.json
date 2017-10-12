@@ -5207,6 +5207,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "Api.Library": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.0.0"
         },
@@ -5220,9 +5221,6 @@
       "Api.Library/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
-        "dependencies": {
-          "Api.Data": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/Api.Library.dll": {}
         },

@@ -1,3 +1,4 @@
+
 public interface IUserRepository
 {
     void Add(User data);

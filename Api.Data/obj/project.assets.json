@@ -4746,6 +4746,16 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "Api.Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Api.Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Api.Library.dll": {}
+        }
       }
     }
   },
@@ -12524,10 +12534,16 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "Api.Library/1.0.0": {
+      "type": "project",
+      "path": "../Api.Library/Api.Library.csproj",
+      "msbuildProject": "../Api.Library/Api.Library.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Api.Library >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
@@ -12562,7 +12578,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Library\\Api.Library.csproj": {
+              "projectPath": "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Library\\Api.Library.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
