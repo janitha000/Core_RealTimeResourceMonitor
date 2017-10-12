@@ -17,7 +17,7 @@ public class UserController : Controller
     [HttpGet("{name}")]
     public User Get(string name)
     {
-        UsersManager manager = new UsersManager();
+        UsersManager manager = new UsersManager(new UserRepository());
         User user = manager.GetUser(name);
         return user;
     }
@@ -25,7 +25,7 @@ public class UserController : Controller
     [HttpPost]
     public void Post([FromBody]User user)
     {
-        UsersManager manager = new UsersManager();
+        UsersManager manager = new UsersManager(new UserRepository());
         manager.AddUser(user);
     }
 

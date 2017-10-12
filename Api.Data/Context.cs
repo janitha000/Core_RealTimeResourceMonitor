@@ -5,7 +5,8 @@ namespace Api.Data
 {
     public class Context : DbContext
     {
-        public DbSet<User> Users {get; set;}
+        public DbSet<User> Users { get; set; }
+        public DbSet<Vehicle> Vehicles { get; set; }
 
         public Context()
         {
