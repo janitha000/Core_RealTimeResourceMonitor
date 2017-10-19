@@ -1,7 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-public class Vehicle
+public class Vehicle : BaseEntity
 {
-    public int Id { get; set; }
     public string Name { get; set; }         
 }

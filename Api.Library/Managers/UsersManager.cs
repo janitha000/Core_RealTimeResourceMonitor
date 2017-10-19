@@ -1,27 +1,28 @@
 
+using System;
 using System.Collections.Generic;
 
 
-public class UsersManager
+public class UsersManager : IManager<User>
 {
-    private IUserRepository _userRepository;
+    private readonly IRepository<User> _userRepository;
 
-    public UsersManager(IUserRepository repository){
-        _userRepository = repository;
-    }
-
-    public User GetUser(string name)
-    {     
-        User user = _userRepository.Get(name);
-        return user;
-    }
-
-    public void AddUser(User user)
-    {
-        _userRepository.Add(user);
+    public UsersManager(IRepository<User> repository){
+        _userRepository = repository ?? throw new ArgumentNullException(nameof(repository));
     }
 
     public bool IsUserNameNull(User user){
         return (user.FirstName == null);
+    }
+
+    public User Get(string param)
+    {
+        User user = _userRepository.Get(dbUser => dbUser.FirstName == param );
+        return user;
+    }
+
+    public void Add(User data)
+    {
+         _userRepository.Add(data);
     }
 }
