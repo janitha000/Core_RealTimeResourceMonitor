@@ -38,6 +38,7 @@ public class UserManagerTests
         _mockRepository.Setup(x => x.Get(name)).Returns(expectedUser);
 
         var user = _userManager.Get(name);
+        Assert.AreSame(expectedUser, user, "Should return one user");
     }
 
     [TestMethod]
@@ -48,9 +49,24 @@ public class UserManagerTests
     }
 
     [TestMethod]
-    public void Should_Check_Exists()
+    public void Should_Return_false_if_Not_Exists()
     {
         string name = "Shanika";
+
+        _mockRepository.Setup(x => x.Get(name)).Returns(default(User));
+
         bool result = _userManager.Exists(name);
+        Assert.IsFalse(result, "Should return false if user does not exist");
+    }
+
+    [TestMethod]
+    public void Should_Return_true_if_Not_Exists()
+    {
+        string name = "Shanika";
+
+        _mockRepository.Setup(x => x.Get(name)).Returns(new User());
+
+        bool result = _userManager.Exists(name);
+        Assert.IsTrue(result, "Should return true if user does not exist");
     }
 }
