@@ -1,7 +1,7 @@
 
 using System;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
 
 public class UsersManager : IManager<User>
 {
@@ -15,6 +15,8 @@ public class UsersManager : IManager<User>
         return (user.FirstName == null);
     }
 
+     
+
     public User Get(string param)
     {
         User user = _userRepository.Get(dbUser => dbUser.FirstName == param );
@@ -24,5 +26,10 @@ public class UsersManager : IManager<User>
     public void Add(User data)
     {
          _userRepository.Add(data);
+    }
+
+    public IEnumerable<User> GetAll()
+    {
+       return  _userRepository.List();
     }
 }

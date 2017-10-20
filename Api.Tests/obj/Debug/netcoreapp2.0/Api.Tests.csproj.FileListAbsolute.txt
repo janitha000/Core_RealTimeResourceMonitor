@@ -28,3 +28,5 @@ E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Tests\bin\Debug\netcoreapp2.0
 E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Tests\bin\Debug\netcoreapp2.0\Api.Library.dll
 E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Tests\bin\Debug\netcoreapp2.0\Api.Library.pdb
 E:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Tests\bin\Debug\netcoreapp2.0\Api.Data.pdb
+e:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Tests\bin\Debug\netcoreapp2.0\Api.Web.dll
+e:\Learn\core\API\Core_RealTimeResourceMonitor\Api.Tests\bin\Debug\netcoreapp2.0\Api.Web.pdb

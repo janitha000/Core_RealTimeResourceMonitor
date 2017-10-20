@@ -23,6 +23,20 @@
           "lib/netstandard1.3/Castle.Core.dll": {}
         }
       },
+      "JWT/3.0.0-beta4": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.2",
+          "System.Security.Cryptography.Csp": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/JWT.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/JWT.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -3003,34 +3017,14 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/10.0.1": {
+      "Newtonsoft.Json/10.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
-          "System.Collections": "4.3.0",
+          "NETStandard.Library": "1.6.1",
           "System.ComponentModel.TypeConverter": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Numerics": "4.3.0",
           "System.Runtime.Serialization.Formatters": "4.3.0",
           "System.Runtime.Serialization.Primitives": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Encoding.Extensions": "4.3.0",
-          "System.Text.RegularExpressions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Tasks": "4.3.0",
-          "System.Xml.ReaderWriter": "4.3.0",
-          "System.Xml.XDocument": "4.3.0",
           "System.Xml.XmlDocument": "4.3.0"
         },
         "compile": {
@@ -4655,7 +4649,7 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Security.Cryptography.Csp.dll": {}
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Csp.dll": {
@@ -5227,6 +5221,25 @@
         "runtime": {
           "bin/placeholder/Api.Library.dll": {}
         }
+      },
+      "Api.Web/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Api.Data": "1.0.0",
+          "Api.Library": "1.0.0",
+          "JWT": "3.0.0-beta4",
+          "Microsoft.AspNetCore.All": "2.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "2.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.0.0",
+          "Microsoft.NETCore.App": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Api.Web.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Api.Web.dll": {}
+        }
       }
     }
   },
@@ -5246,6 +5259,17 @@
         "lib/net45/Castle.Core.dll",
         "lib/netstandard1.3/Castle.Core.dll",
         "readme.txt"
+      ]
+    },
+    "JWT/3.0.0-beta4": {
+      "sha512": "upmeCOLlZGxp18dClMMZp0UbFynTX36L/6r9G+eHByDzRU/btnfEQogrMmSKlLp2jo4T8m4PzLsrmf0vnPPkiA==",
+      "type": "package",
+      "path": "jwt/3.0.0-beta4",
+      "files": [
+        "jwt.3.0.0-beta4.nupkg.sha512",
+        "jwt.nuspec",
+        "lib/net35/JWT.dll",
+        "lib/netstandard1.3/JWT.dll"
       ]
     },
     "Libuv/1.10.0": {
@@ -8325,13 +8349,12 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/10.0.1": {
-      "sha512": "ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
+    "Newtonsoft.Json/10.0.2": {
+      "sha512": "iwElSU2IXmwGvytJsezyDML2ZWDkG2JzTYzlU/BNlmzMdlmRvbnwITsGGY74gwVEpDli1UdOLkMT7/3jxWvXzA==",
       "type": "package",
-      "path": "newtonsoft.json/10.0.1",
+      "path": "newtonsoft.json/10.0.2",
       "files": [
-        "Newtonsoft.Json.10.0.1.nupkg.sha512",
-        "Newtonsoft.Json.nuspec",
+        "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -8344,8 +8367,12 @@
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",
         "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wpa81+wp8/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wpa81+wp8/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wpa81+wp8/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wpa81+wp8/Newtonsoft.Json.xml",
+        "newtonsoft.json.10.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec",
         "tools/install.ps1"
       ]
     },
@@ -13603,12 +13630,18 @@
       "type": "project",
       "path": "../Api.Library/Api.Library.csproj",
       "msbuildProject": "../Api.Library/Api.Library.csproj"
+    },
+    "Api.Web/1.0.0": {
+      "type": "project",
+      "path": "../Api.Web/Api.Web.csproj",
+      "msbuildProject": "../Api.Web/Api.Web.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Api.Data >= 1.0.0",
       "Api.Library >= 1.0.0",
+      "Api.Web >= 1.0.0",
       "MSTest.TestAdapter >= 1.1.18",
       "MSTest.TestFramework >= 1.1.18",
       "Microsoft.NET.Test.Sdk >= 15.3.0-preview-20170628-02",
@@ -13651,6 +13684,9 @@
             },
             "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Data\\Api.Data.csproj": {
               "projectPath": "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Data\\Api.Data.csproj"
+            },
+            "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Web\\Api.Web.csproj": {
+              "projectPath": "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Web\\Api.Web.csproj"
             }
           }
         }

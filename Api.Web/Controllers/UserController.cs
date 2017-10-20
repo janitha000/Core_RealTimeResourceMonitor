@@ -1,10 +1,10 @@
 
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-[Authorize]
 [Route("api/v1/[controller]")]
 public class UserController : Controller
 {
@@ -15,9 +15,11 @@ public class UserController : Controller
     }
 
     [HttpGet]
-    public string GetAll(string name)
+    [ProducesResponseType(typeof(IEnumerable<User>), 200)]
+    public async Task<IActionResult>  GetAllAsync()
     {
-        return "Janitha";
+        IEnumerable<User> users = _usermanager.GetAll();
+        return Ok(users);
     }
 
     [HttpGet("{name}")]
@@ -32,7 +34,7 @@ public class UserController : Controller
     public void Post([FromBody]User user)
     {
         UsersManager manager = new UsersManager(new UserRepository());
-        manager.AddUser(user);
+        manager.Add(user);
     }
 
 }
