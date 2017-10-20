@@ -3,7 +3,8 @@ using System.Collections.Generic;
 public interface IManager<T>
 {
     T Get(string param);
-    void Add(T data);
-
+    void Add(T data);  
     IEnumerable<T> GetAll();
+
+    bool Exists(string param);
 }

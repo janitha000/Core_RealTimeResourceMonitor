@@ -22,19 +22,19 @@ public class UserController : Controller
         return Ok(users);
     }
 
-    [HttpGet("{name}")]
-    public User Get(string name)
-    {
-        UsersManager manager = new UsersManager(new UserRepository());
-        User user = manager.Get(name);
-        return user;
-    }
+    // [HttpGet("{name}")]
+    // public User Get(string name)
+    // {
+    //     UsersManager manager = new UsersManager(new UserRepository());
+    //     User user = manager.Get(name);
+    //     return user;
+    // }
 
-    [HttpPost]
-    public void Post([FromBody]User user)
-    {
-        UsersManager manager = new UsersManager(new UserRepository());
-        manager.Add(user);
-    }
+    // [HttpPost]
+    // public void Post([FromBody]User user)
+    // {
+    //     UsersManager manager = new UsersManager(new UserRepository());
+    //     manager.Add(user);
+    // }
 
 }

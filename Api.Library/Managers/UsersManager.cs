@@ -7,29 +7,33 @@ public class UsersManager : IManager<User>
 {
     private readonly IRepository<User> _userRepository;
 
-    public UsersManager(IRepository<User> repository){
+    public UsersManager(IRepository<User> repository)
+    {
         _userRepository = repository ?? throw new ArgumentNullException(nameof(repository));
     }
 
-    public bool IsUserNameNull(User user){
-        return (user.FirstName == null);
-    }
-
-     
-
     public User Get(string param)
     {
-        User user = _userRepository.Get(dbUser => dbUser.FirstName == param );
+        User user = _userRepository.Get(dbUser => dbUser.FirstName == param);
         return user;
     }
 
     public void Add(User data)
     {
-         _userRepository.Add(data);
+        _userRepository.Add(data);
     }
 
     public IEnumerable<User> GetAll()
     {
-       return  _userRepository.List();
+        return _userRepository.List();
+    }
+
+    public bool Exists(string param)
+    {
+        User user = Get(param);
+        if (user == null)
+            return false;
+        else
+            return true;
     }
 }

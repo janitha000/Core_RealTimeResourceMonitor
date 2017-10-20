@@ -2,8 +2,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
 [TestClass]
-public class UserControllerTests {
-    protected  UserController userController;
+public class UserControllerTests
+{
+    protected UserController userController;
     protected Mock<IManager<User>> moqUserManager;
 
     public UserControllerTests()
@@ -21,11 +22,11 @@ public class UserControllerTests {
             new User {FirstName = "Vindya", LastName = "Hettige"}
         };
         moqUserManager.Setup(x => x.GetAll()).Returns(expectedUsers);
-        
-        var result =  userController.GetAllAsync();
-        Assert.AreSame(expectedUsers, result.Result,"Should return users");
 
-
+        var result = userController.GetAllAsync();
+        Assert.AreSame(expectedUsers, result.Result, "Should return users");
     }
+
+
 
 }
