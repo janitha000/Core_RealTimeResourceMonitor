@@ -32,6 +32,11 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
         }
     }
 
+    public T Get(string param)
+    {
+        throw new NotImplementedException();
+    }
+
     public IEnumerable<T> List()
     {
         using (Context context = new Context())

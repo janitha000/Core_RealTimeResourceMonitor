@@ -35,6 +35,8 @@ public class UserManagerTests
         string name = "Janitha";
         var expectedUser = new User() { FirstName = "Janitha", LastName = "Tennakoon", Age = 27 };
 
+        _mockRepository.Setup(x => x.Get(name)).Returns(expectedUser);
+
         var user = _userManager.Get(name);
     }
 

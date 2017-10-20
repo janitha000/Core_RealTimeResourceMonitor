@@ -14,7 +14,7 @@ public class UsersManager : IManager<User>
 
     public User Get(string param)
     {
-        User user = _userRepository.Get(dbUser => dbUser.FirstName == param);
+        User user = _userRepository.Get(param);
         return user;
     }
 
