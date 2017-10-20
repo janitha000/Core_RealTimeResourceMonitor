@@ -60,7 +60,7 @@ public class UserManagerTests
     }
 
     [TestMethod]
-    public void Should_Return_true_if_Not_Exists()
+    public void Should_Return_true_if_Exists()
     {
         string name = "Shanika";
 

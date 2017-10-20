@@ -31,9 +31,6 @@ public class UsersManager : IManager<User>
     public bool Exists(string param)
     {
         User user = Get(param);
-        if (user == null)
-            return false;
-        else
-            return true;
+        return user != null;
     }
 }
