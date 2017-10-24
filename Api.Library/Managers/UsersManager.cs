@@ -18,9 +18,10 @@ public class UsersManager : IManager<User>
         return user;
     }
 
-    public void Add(User data)
+    public User Add(User data)
     {
         _userRepository.Add(data);
+        return data;
     }
 
     public IEnumerable<User> GetAll()
