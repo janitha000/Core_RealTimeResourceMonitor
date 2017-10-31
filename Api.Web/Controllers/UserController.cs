@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Mvc;
 public class UserController : Controller
 {
     private readonly IManager<User> _usermanager;
-
     public UserController(IManager<User> manager)
     {
         _usermanager = manager ?? throw new ArgumentNullException(nameof(manager));
@@ -33,24 +32,18 @@ public class UserController : Controller
     }
 
     [HttpGet("{name}")]
+    [UserExistsAttribute]
     [ProducesResponseType(typeof(User), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> GetAsync(string name)
     {
-        try
-        {
-            User user = _usermanager.Get(name);
-            return Ok(user);
-        }
-        catch (UserException)
-        {
-            return NotFound();
-        }
 
+        User user = _usermanager.Get(name);
+        return Ok(user);
     }
 
     [HttpPost]
-    [ValidateModel] 
+    [ValidateModel]
     [ProducesResponseType(typeof(User), StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> CreateAsync([FromBody]User user)
@@ -60,13 +53,10 @@ public class UserController : Controller
     }
 
     [HttpPut("{firstname")]
-    [ValidateModel] 
-    public async Task<IActionResult> PutAsync(string firstname, [FromBody] User user )
+    [ValidateModel]
+    [UserExistsAttribute]
+    public async Task<IActionResult> PutAsync(string firstname, [FromBody] User user)
     {
-        if(!_usermanager.Exists(firstname)){
-            return NotFound(firstname);
-        }
-
         _usermanager.Update(user);
         return Ok();
     }
