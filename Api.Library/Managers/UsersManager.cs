@@ -34,4 +34,11 @@ public class UsersManager : IManager<User>
         User user = Get(param);
         return user != null;
     }
+
+    public User Update(User user)
+    {
+        _userRepository.Update(user);
+
+        return user;
+    }
 }

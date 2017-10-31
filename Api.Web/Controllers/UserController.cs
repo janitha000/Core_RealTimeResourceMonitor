@@ -49,17 +49,32 @@ public class UserController : Controller
 
     }
 
-    // [HttpPost]
-    // [ProducesResponseType(typeof(User), StatusCodes.Status201Created)]
-    // [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    // public Task<ActionResult> CreateAsync([FromBody]User user)
-    // {
-    //     if(!ModelState.IsValid)
-    //     {
-    //         return BadRequest(ModelState);
-    //     }
-    //     var createdUser = _usermanager.Add(user);
-    //     return CreatedAtAction(nameof(GetAsync), new { key = createdUser.Id}, createdUser);
-    // }
+    [HttpPost]
+    [ProducesResponseType(typeof(User), StatusCodes.Status201Created)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> CreateAsync([FromBody]User user)
+    {
+        if(!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+        var createdUser = _usermanager.Add(user);
+        return Ok(createdUser);
+    }
+
+    [HttpPut("{firstname")]
+    public async Task<IActionResult> PutAsync(string firstname, [FromBody] User user )
+    {
+        if(!_usermanager.Exists(firstname)){
+            return NotFound(firstname);
+        }
+
+        if(!ModelState.IsValid){
+            return BadRequest(ModelState);
+        }
+
+        _usermanager.Update(user);
+        return Ok();
+    }
 
 }

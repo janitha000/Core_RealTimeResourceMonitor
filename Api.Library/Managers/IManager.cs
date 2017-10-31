@@ -6,4 +6,6 @@ public interface IManager<T>
     T Get(string param);
     T Add(T data);
     bool Exists(string param);
+
+    T Update(T Data);
 }
