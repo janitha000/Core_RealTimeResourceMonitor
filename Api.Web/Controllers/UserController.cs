@@ -50,27 +50,21 @@ public class UserController : Controller
     }
 
     [HttpPost]
+    [ValidateModel] 
     [ProducesResponseType(typeof(User), StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> CreateAsync([FromBody]User user)
     {
-        if(!ModelState.IsValid)
-        {
-            return BadRequest(ModelState);
-        }
         var createdUser = _usermanager.Add(user);
         return Ok(createdUser);
     }
 
     [HttpPut("{firstname")]
+    [ValidateModel] 
     public async Task<IActionResult> PutAsync(string firstname, [FromBody] User user )
     {
         if(!_usermanager.Exists(firstname)){
             return NotFound(firstname);
-        }
-
-        if(!ModelState.IsValid){
-            return BadRequest(ModelState);
         }
 
         _usermanager.Update(user);
