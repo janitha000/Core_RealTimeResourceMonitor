@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Library\\Api.Library.csproj",
+      "projectUniqueName": "e:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Library\\Api.Library.csproj",
       "projectName": "Api.Library",
-      "projectPath": "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Library\\Api.Library.csproj",
+      "projectPath": "e:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Library\\Api.Library.csproj",
       "packagesPath": "C:\\Users\\janithat\\.nuget\\packages\\",
-      "outputPath": "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Library\\obj\\",
+      "outputPath": "e:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Library\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
