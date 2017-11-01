@@ -12587,11 +12587,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Web\\Api.Web.csproj",
+      "projectUniqueName": "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Web\\Api.Web.csproj",
       "projectName": "Api.Web",
-      "projectPath": "e:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Web\\Api.Web.csproj",
+      "projectPath": "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Web\\Api.Web.csproj",
       "packagesPath": "C:\\Users\\janithat\\.nuget\\packages\\",
-      "outputPath": "e:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Web\\obj\\",
+      "outputPath": "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12610,11 +12610,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "e:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Library\\Api.Library.csproj": {
-              "projectPath": "e:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Library\\Api.Library.csproj"
+            "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Library\\Api.Library.csproj": {
+              "projectPath": "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Library\\Api.Library.csproj"
             },
-            "e:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Data\\Api.Data.csproj": {
-              "projectPath": "e:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Data\\Api.Data.csproj"
+            "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Data\\Api.Data.csproj": {
+              "projectPath": "E:\\Learn\\core\\API\\Core_RealTimeResourceMonitor\\Api.Data\\Api.Data.csproj"
             }
           }
         }

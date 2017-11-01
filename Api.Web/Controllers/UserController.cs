@@ -52,10 +52,10 @@ public class UserController : Controller
         return Ok(createdUser);
     }
 
-    [HttpPut("{firstname")]
+    [HttpPut("{name}")]
     [ValidateModel]
     [UserExistsAttribute]
-    public async Task<IActionResult> PutAsync(string firstname, [FromBody] User user)
+    public async Task<IActionResult> PutAsync(string name, [FromBody] User user)
     {
         _usermanager.Update(user);
         return Ok();
