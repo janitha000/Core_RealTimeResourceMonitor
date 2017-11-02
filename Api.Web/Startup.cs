@@ -33,7 +33,10 @@ namespace Api.Web
         {
             services.Configure<JWTSettings>(Configuration.GetSection("JWTSettings"));
             //services.AddEntityFrameworkSqlite().AddDbContext<AccountContext>();
-            services.AddEntityFrameworkSqlite().AddDbContext<Context>();
+            //services.AddEntityFrameworkSqlite().AddDbContext<Context>();
+
+
+            services.AddDbContext<InMemoryContext>(options => options.UseInMemoryDatabase());
 
 
 
@@ -95,7 +98,7 @@ namespace Api.Web
             //   .AddJwtBearer(o => o.TokenValidationParameters = tokenValidationParameters);
 
             services.AddScoped<IManager<User>, UsersManager>();
-            services.AddScoped<IRepository<User>, UserRepository>();
+            services.AddScoped<IRepository<User>, InMemoryUserRepository>();
 
 
             services.AddMvc();

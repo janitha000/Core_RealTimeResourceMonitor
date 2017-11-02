@@ -10,6 +10,7 @@
         "dependencies": {
           "Api.Library": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "2.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.0.0"
         },
         "runtime": {
