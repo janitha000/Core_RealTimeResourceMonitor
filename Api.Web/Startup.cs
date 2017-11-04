@@ -100,6 +100,12 @@ namespace Api.Web
             services.AddScoped<IManager<User>, UsersManager>();
             services.AddScoped<IRepository<User>, InMemoryUserRepository>();
 
+            //Cache
+            services.AddMemoryCache();
+            //services.AddScoped<IManager<User>, CachedUserManager>();
+            //services.AddScoped<UsersManager>();
+
+
 
             services.AddMvc();
         }
